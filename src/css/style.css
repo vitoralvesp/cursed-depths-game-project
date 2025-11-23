@@ -1,0 +1,136 @@
+:root {
+    --primary-bg-color: #0077B6;
+    --primary-text-color: #fff;
+    --primary-color: #E85D04;
+    --primary-yellow-color: #FFBA08;
+    --footer-bg: #03071E;
+}
+
+/* Used in titles */
+.micro-5-regular {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Used in texts */
+.mina-regular {
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-content: center;
+    background-color: var(--primary-bg-color);
+}
+
+h1 {
+    font-size: 64px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    line-height: 77%;
+}
+
+button {
+    border: 0;
+}
+
+button, img, a {
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    background-color: var(--footer-bg);
+}
+
+.logo img {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.action-buttons {
+    margin-top: 48px;
+}
+
+.action-buttons button {
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    font-size: 36px;
+}
+
+.action-btn-inside button {
+    margin-top: 20px;
+}
+
+.choose-character,
+.previous-character,
+.next-character {
+    font-size: 36px;
+    background-color: var(--primary-yellow-color);
+}
+
+.character-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 47px;
+}
+
+.control-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.character-image {
+    width: 480px;
+    image-rendering: pixelated;
+}
+
+.previous-character,
+.next-character {
+    width: 40px;
+    height: 55px;
+    background-color: var(--primary-yellow-color);
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.choose-character {
+    width: 75%;
+    height: 60px;
+    background-color: var(--primary-yellow-color);
+    padding: 15px 30px;
+    border: none;
+    font-size: 36px;
+}

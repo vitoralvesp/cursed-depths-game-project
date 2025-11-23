@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: 70px 1fr 1fr 70px;
+    align-items: start;
+}
+
+.game-presentation {
+    grid-column: 2;
+}
+
+.character-gallery {
+    grid-column: 3;
+}
+
+.action-buttons {
+    grid-column: 2;
+}
+
+.action-btn-inside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.character-gallery button {
+    grid-column: 2 / 4;
+}
